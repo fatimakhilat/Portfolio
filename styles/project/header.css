@@ -1,0 +1,230 @@
+/*=========================================================
+=                     HEADER                             =
+=========================================================*/
+
+.header-container {
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  gap: 40px;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .05);
+}
+
+/*=========================================================
+=                     HEADER LEFT                        =
+=========================================================*/
+
+.header-left {
+  flex: 1;
+  padding: 0 50px;
+  /*padding: haut/bas gauche/droite;*/
+
+}
+
+.logo {
+
+  font-size: 18px;
+  color: rgb(17, 24, 39);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.logoname {
+  color: #5b21b6;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #5b21b6;
+  border-radius: 50px;
+  display: inline-block;
+
+}
+
+/*=========================================================
+=                  NAVIGATION MENU                       =
+=========================================================*/
+
+.header-midle {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.midle-item {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.item a:hover {
+  color: #38bdf8;
+}
+
+/*=========================================================
+=                 NAVIGATION LINKS                       =
+=========================================================*/
+
+.header-midle a {
+  position: relative;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.header-midle a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  background: rgb(142, 2, 142);
+
+  transition: .3s;
+}
+
+.header-midle a:hover::after,
+.header-midle a.red::after {
+  width: 100%;
+}
+
+/*=========================================================
+=                    HEADER RIGHT                        =
+=========================================================*/
+
+.header-right {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/*=========================================================
+=                  DOWNLOAD BUTTON                       =
+=========================================================*/
+
+.download-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 5px;
+
+  height: 46px;
+
+  background: #5b21b6;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  font-weight: 600;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: .3s;
+
+}
+
+.download-button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+.download-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  height: 100%;
+}
+
+.dow-name {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 20px;
+
+}
+
+.icon-image {
+  margin-right: 18px;
+  margin-left: 18px;
+}
+
+.icon-img {
+  height: 20px;
+  width: 20px;
+}
+
+
+/*=========================================================
+=                    THEME BUTTON                        =
+=========================================================*/
+.moon-item {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.moon-item:hover {
+  background: #f2f2f2;
+}
+
+.moon-item img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+
+}
+
+.moon-item img:hover {
+  transform: rotate(25deg);
+}
+
+/*=========================================================
+=                GLOBAL LINKS & LISTS                    =
+=========================================================*/
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* Supprimer le soulignement des liens */
+a {
+  text-decoration: none;
+  color: rgb(17, 24, 39);
+  ;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+
+}
