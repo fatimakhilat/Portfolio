@@ -1,5 +1,8 @@
 import { initBackTop } from "./backTop.js";
 import { initAnimations } from "./animations.js";
+import { initMenu } from "./menu.js";
+
+
 
 
 /*=========================================================

@@ -2,7 +2,7 @@
 =                    BACK TO TOP                          =
 =========================================================*/
 
-export function initBackTop() {
+function initBackTop() {
 
   const backTopBtn = document.querySelector(".js-back-top");
 

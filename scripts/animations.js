@@ -2,7 +2,7 @@
 =                  SCROLL ANIMATIONS                      =
 =========================================================*/
 
-export function initAnimations() {
+function initAnimations() {
 
   const animatedElements = document.querySelectorAll(
     "section, footer, .skill-item, .project-card"
