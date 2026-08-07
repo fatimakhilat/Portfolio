@@ -23,3 +23,32 @@ const animatedElements = document.querySelectorAll(
 
 loadTheme();
 initAnimations();
+
+
+/*=========================================================
+=                       MENU                             =
+=========================================================*/
+
+menuBtn.addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+  menu.classList.toggle("active");
+
+  const isOpen = menu.classList.contains("active");
+
+  localStorage.setItem("menu", isOpen ? "open" : "close");
+}
+
+
+navLinks.forEach(link => {
+
+  link.addEventListener("click", () => {
+
+    // Fermer le menu
+    menu.classList.remove("active");
+    localStorage.setItem("menu", "close");
+
+  });
+
+});
+
