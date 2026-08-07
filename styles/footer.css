@@ -1,0 +1,212 @@
+/*=========================================================
+=                     FOOTER                              =
+=========================================================*/
+
+#footer {
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .8s ease;
+}
+
+/*=========================================================
+=                 FOOTER CONTAINER                        =
+=========================================================*/
+.footer-container {
+  width: 100%;
+  background: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+/*=========================================================
+=                  FOOTER CONTENT                         =
+=========================================================*/
+
+.footer-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px 50px 0;
+}
+
+/*=========================================================
+=                  FOOTER TITLES                          =
+=========================================================*/
+
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.dot6 {
+  width: 9px;
+  height: 9px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color var(--transition);
+}
+
+.footer-title h2 {
+  color: var(--color-white);
+  transition:
+    transform var(--transition),
+    color var(--transition);
+}
+
+.footer-title:hover h2 {
+  color: var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+.footer-title:hover .dot6 {
+  background-color: var(--color-primary-hover);
+}
+
+/*=========================================================
+=                    CONTACT                              =
+=========================================================*/
+.footer-contact,
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.link-contact {
+  display: inline-block;
+  color: var(--color-white);
+
+}
+
+.link-contact:hover {
+  color: var(--color-primary-hover);
+}
+
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.contact-item {
+  display: flex;
+  column-gap: 12px;
+  transition: 0.3s;
+  cursor: pointer;
+  transition: transform var(--transition);
+}
+
+.contact-item:hover,
+.list-nav li:hover {
+  transform: scale(1.05);
+}
+
+.img-contact {
+  width: 22px;
+  height: auto;
+  border-radius: 6px;
+
+}
+
+/*=========================================================
+=                  QUICK LINKS                            =
+=========================================================*/
+
+.link-contact,
+.nav-title {
+  text-decoration: none;
+}
+
+.list-nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  column-gap: 45px;
+  list-style: none;
+}
+
+.nav-title {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.nav-title:hover {
+  color: var(--color-primary);
+  padding-left: 6px;
+}
+
+.list-nav li {
+  transition: transform var(--transition);
+}
+
+
+
+/*=========================================================
+=                  SOCIAL                                 =
+=========================================================*/
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 25px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.link-img {
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.link-img:hover {
+  transform: translateY(-4px);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--color-border-dark);
+}
+
+
+/*=========================================================
+=                  COPYRIGHT                              =
+=========================================================*/
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  padding: 12px 0px;
+  color: var(--color-white);
+  font-weight: 300;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.copyright:hover {
+  color: var(--color-primary-hover);
+}
