@@ -4,7 +4,7 @@
 
 function initNavigation() {
 
-  const sections = document.querySelectorAll("section, footer");
+  const sections = document.querySelectorAll("section, footer"); 
   const navLinks = document.querySelectorAll("nav a");
 
   if (!sections.length || !navLinks.length) {
