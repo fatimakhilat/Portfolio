@@ -1,6 +1,7 @@
 import { initBackTop } from "./backTop.js";
 import { initAnimations } from "./animations.js";
 import { initMenu } from "./menu.js";
+import { initNavigation } from "./navigation.js";
 
 
 
@@ -29,9 +30,13 @@ const animatedElements = document.querySelectorAll(
 
 loadTheme();
 
+initMenu();
+
 initAnimations();
 
 initBackTop();
+
+initNavigation();
 
 
 /*=========================================================
@@ -95,46 +100,6 @@ function updateTheme() {
   );
 }
 
-
-/*=========================================================
-=                   SCROLL EVENTS                        =
-=========================================================*/
-
-window.addEventListener("scroll", () => {
-  updateActiveLink();
-  toggleBackTopButton();
-});
-
-function updateActiveLink() {
-  let currentSection = "";
-
-  sections.forEach(section => {
-    const top = section.offsetTop;
-    const height = section.offsetHeight;
-
-    if (
-      window.scrollY >= top - 200 &&
-      window.scrollY < top + height - 200
-    ) {
-      currentSection = section.id;
-    }
-  });
-
-  if (
-    window.innerHeight + window.scrollY >=
-    document.body.offsetHeight - 5
-  ) {
-    currentSection = "footer";
-  }
-
-  navLinks.forEach(link => {
-    link.classList.remove("red");
-
-    if (link.getAttribute("href") === "#" + currentSection) {
-      link.classList.add("red");
-    }
-  });
-}
 
 
 
