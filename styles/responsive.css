@@ -1,0 +1,422 @@
+/*=========================================================
+=                    TABLET (768px - 991px)               =
+=========================================================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /*=====================================================
+    =                     HEADER                          =
+    =====================================================*/
+
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    position: relative;
+  }
+
+
+
+  .menu-btn {
+    display: block;
+    background: var(--color-primary);
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    color: azure;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    margin-right: 30px;
+  }
+
+  .right-item {
+    display: none;
+  }
+
+  .right-item.active {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+    gap: 20px;
+    width: 80px;
+    background: white;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+
+  /*=====================================================
+    =                     HERO                            =
+    =====================================================*/
+
+  .hero-container {
+    flex-direction: column;
+    gap: 8px;
+    padding: 30px 0;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .hero-name {
+    font-size: 40px;
+  }
+
+  /*=====================================================
+    =                     ABOUT                           =
+    =====================================================*/
+
+  .about-container {
+    flex-direction: column;
+    row-gap: 15px;
+
+  }
+
+  .about-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .download-button {
+    display: inline-flex;
+    margin: 20px auto;
+  }
+
+  /*=====================================================
+    =                     SKILLS                          =
+    =====================================================*/
+
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  /*=====================================================
+    =                     PROJECTS                        =
+    =====================================================*/
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .project-card {
+    max-width: 340px;
+    margin: auto;
+  }
+
+  /*=====================================================
+    =                     FOOTER                          =
+    =====================================================*/
+
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-social {
+    grid-column: span 2;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-self: center;
+  }
+}
+
+/*=========================================================
+=                    MOBILE (0px - 767px)                =
+=========================================================*/
+
+@media (max-width: 767px) {
+
+  /*=====================================================
+    =                     HEADER                          =
+    =====================================================*/
+
+  .header-container {
+    padding: 0 15px;
+  }
+
+  .header-left {
+    width: auto;
+    padding: 0;
+  }
+
+  .logo {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    position: relative;
+  }
+
+  .menu-btn {
+    display: block;
+    background-color: #5d18f4;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    color: azure;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    margin-right: 30px;
+  }
+
+  .right-item {
+    display: none;
+  }
+
+  .right-item.active {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px 10px;
+    width: 80px;
+    background: white;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  /*=====================================================
+    =                     HERO                            =
+    =====================================================*/
+
+  .hero-container {
+    flex-direction: column;
+    row-gap: 6px;
+    padding: 20px 15px;
+    width: 100%;
+  }
+
+  .hero-right {
+    margin-left: 0;
+  }
+
+  .hero-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 300px;
+  }
+
+  .hero-circle {
+    width: 260px;
+    height: 240px;
+  }
+
+  .hero-greeting {
+    font-size: 24px;
+  }
+
+  .hero-name {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-description,
+  .hero-text {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .hero-social {
+    gap: 25px;
+    justify-content: center;
+  }
+
+
+  /*=====================================================
+    =                     ABOUT                           =
+    =====================================================*/
+  .about-container {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .about-left {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-img {
+    width: calc(100% - 20px);
+    height: 320px;
+    left: 10px;
+    right: 10px;
+  }
+
+  .about-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .about-square {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .about-job {
+    font-size: 24px;
+    max-width: 100%;
+    word-break: break-word;
+  }
+
+  .information-list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .download-button {
+    display: inline-flex;
+    margin: 20px auto;
+  }
+
+  /*=====================================================
+    =                     SKILLS                          =
+    =====================================================*/
+
+  .skills-container {
+    width: 100%;
+  }
+
+  .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 0;
+  }
+
+  /*=====================================================
+    =                     PROJECTS                        =
+    =====================================================*/
+
+  .projects-header {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projects-container {
+    width: 100%;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .project-card {
+    max-width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .project-img {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+  }
+
+  .projet-image {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px 6px 0 0;
+    transition: transform .4s ease;
+
+  }
+
+  .project-links {
+    margin: 10px 0;
+  }
+
+  /*===================================================       =                  FOOTER.                          =  ====================================================*/
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    text-align: center;
+  }
+
+  .footer-contact,
+  .footer-links,
+  .footer-social {
+    justify-self: center;
+  }
+
+  .icon-title {
+    display: flex;
+    align-items: center;
+  }
+
+}
