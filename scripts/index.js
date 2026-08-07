@@ -1,3 +1,5 @@
+import { initBackTop } from "./backTop.js";
+
 
 /*=========================================================
 =                     DOM ELEMENTS                        =
@@ -23,7 +25,7 @@ const animatedElements = document.querySelectorAll(
 
 loadTheme();
 initAnimations();
-
+initBackTop();
 
 /*=========================================================
 =                       MENU                             =
