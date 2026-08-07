@@ -1,0 +1,112 @@
+/*=========================================================
+=                      SECTION                            =
+=========================================================*/
+
+#skills {
+  width: 100%;
+  border: 1px solid #ededed;
+  opacity: 0;
+  transform: translateY(70px);
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+/*=========================================================
+=                   CONTAINER                             =
+=========================================================*/
+.skills-container {
+  width: 100%;
+  padding: 30px 50px;
+  margin: auto;
+  background: var(--bg-section);
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+
+/*=========================================================
+=                     TITLE                               =
+=========================================================*/
+
+.section-title {
+  display: flex;
+  align-items: center;
+}
+
+.skill-title {
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.dot4 {
+  width: 10px;
+  height: 10px;
+  background-color: #5d18f4;
+  border-radius: 40px;
+  display: inline-block;
+}
+
+/*=========================================================
+=                    WRAPPER                              =
+=========================================================*/
+
+.skills-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+/*=========================================================
+=                     CARD                                =
+=========================================================*/
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform .3s ease,
+    opacity .5s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
+}
+
+
+/*=========================================================
+=                     IMAGE                               =
+=========================================================*/
+
+.item1,
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-skill {
+  width: 65px;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+
+/*=========================================================
+=                     TEXT                                =
+=========================================================*/
+
+.item-title {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
