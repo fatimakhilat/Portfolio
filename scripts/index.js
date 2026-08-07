@@ -25,6 +25,7 @@ const animatedElements = document.querySelectorAll(
 
 loadTheme();
 initAnimations();
+
 initBackTop();
 
 /*=========================================================
