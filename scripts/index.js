@@ -127,3 +127,24 @@ function updateActiveLink() {
   });
 }
 
+
+/*=========================================================
+=                 BACK TO TOP BUTTON                     =
+=========================================================*/
+
+function toggleBackTopButton() {
+  backTopBtn.classList.toggle(
+    "show",
+    window.scrollY > 300
+  );
+}
+
+backTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+
+
