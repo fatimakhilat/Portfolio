@@ -1,0 +1,78 @@
+/*=========================================================
+=                     RESET CSS                           =
+=========================================================*/
+
+/* Supprime les marges et paddings par défaut */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Empêche le défilement horizontal */
+
+html,
+body {
+  overflow-x: hidden;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/*=========================================================
+=                     CSS VARIABLES                       =
+=========================================================*/
+:root {
+
+  /* ===== Colors ===== */
+
+  --color-primary: #5b21b6;
+  --color-primary-hover: #38bdf8;
+  --bg-section: rgb(240, 242, 253);
+  --color-white: #ffffff;
+  --color-black: #111827;
+
+  --color-text: #222222;
+  --color-text-light: #6b7280;
+
+  --color-border: #e5e7eb;
+  --color-border-dark: #374151;
+
+  /* ===== Background ===== */
+
+  --bg-light: #ffffff;
+  --bg-dark: #111827;
+
+  /* ===== Transition ===== */
+
+  --transition: .3s ease;
+
+  /* ===== Shadow ===== */
+
+  --shadow:
+    0 12px 30px rgba(0, 0, 0, .12);
+
+}
+
+/*=======================================================                 BODY                                =
+  =========================================================*/
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--bg-light);
+  color: var(--color-text);
+}
