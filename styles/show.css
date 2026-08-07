@@ -1,0 +1,83 @@
+/*=========================================================
+=                     SHOW ANIMATIONS                     =
+=========================================================*/
+
+/*=========================================================
+=                SECTIONS & FOOTER                        =
+=========================================================*/
+
+section.show1,
+footer.show1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*=========================================================
+=                     HERO                                =
+=========================================================*/
+
+#hero.show1 {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/*=========================================================
+=                     ABOUT                               =
+=========================================================*/
+
+#about.show1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*=========================================================
+=                     SKILLS                              =
+=========================================================*/
+
+#skills.show1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation des cartes */
+
+.skill-item.show1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Apparition progressive */
+
+.skill-item {
+  transition-delay: calc(var(--i) * .1s);
+}
+
+/*=========================================================
+=                     PROJECTS                            =
+=========================================================*/
+
+#projects.show1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animation des cartes */
+.project-card.show1 {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+/* Apparition progressive */
+
+.project-card {
+  transition-delay: calc(var(--i) * .1s);
+}
+
+/*=========================================================
+=                     FOOTER                              =
+=========================================================*/
+
+#footer.show1 {
+  opacity: 1;
+  transform: translateY(0);
+}
