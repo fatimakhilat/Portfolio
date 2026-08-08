@@ -27,8 +27,8 @@ export const projects = [
         alt: "JavaScript"
       }],
     features: ["Responsive", "Dark Mode", "Animations"],
-    github: "https://github.com/fatimakhilat",
-    live: "https://fatimakhilat.github.io/portfolio/"
+    github: "https://github.com/fatimakhilat/Portfolio?utm_source=chatgpt.com",
+    live: "https://fatimakhilat.github.io/Portfolio/"
 
   },
   {
