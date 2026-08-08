@@ -4,8 +4,8 @@
 
 function initNavigation() {
 
-  const sections = document.querySelectorAll("section, footer"); 
-  const navLinks = document.querySelectorAll("nav a");
+  const sections = document.querySelectorAll("section, footer");
+  const navLinks = document.querySelectorAll(".js-right-item a");
 
   if (!sections.length || !navLinks.length) {
     return;
@@ -56,7 +56,7 @@ function initNavigation() {
     "scroll",
     updateActiveLink
   );
-
+  updateActiveLink();
 }
 
 export { initNavigation };

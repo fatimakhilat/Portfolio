@@ -239,10 +239,14 @@ body.dark-mode .par2 {
   color: rgb(216, 213, 213);
 }
 
-/* Links */
-
+/* Links in dark mode */
 body.dark-mode .right-item.active a {
   color: var(--color-white);
+}
+
+/* Active link */
+body.dark-mode .right-item.active a.red {
+  color: rgb(142, 2, 142);
 }
 
 /* Buttons */
@@ -262,9 +266,7 @@ body.dark-mode .hero-dots {
 }
 
 
-body.dark-mode .red {
-  color: rgb(142, 2, 142);
-}
+
 
 body.dark-mode .right-item.active {
   background: var(--bg-dark);
@@ -303,6 +305,15 @@ body.dark-mode .card-square {
 body.dark-mode .link-contact:hover {
   color: var(--color-primary-hover);
 }
+
+body.dark-mode .menu-btn {
+  background-color: rgb(17, 24, 39);
+}
+
+body.dark-mode .right-item a:hover {
+  color: var(--color-primary-hover);
+}
+
 
 /*=========================================================
 =                     ANIMATIONS                          =

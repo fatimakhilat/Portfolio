@@ -21,18 +21,35 @@
   }
 
 
-
   .menu-btn {
     display: block;
-    background: var(--color-primary);
-    height: 25px;
-    width: 25px;
-    border-radius: 2px;
-    color: azure;
+    width: 35px;
+    height: 45px;
+    padding: 0;
+
+    background-color: white;
+
+
     cursor: pointer;
+
+    /* centre les 3 lignes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
     position: relative;
     z-index: 1001;
-    margin-right: 30px;
+  }
+
+  .menu-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+
+    background-color: var(--color-primary);
+    border-radius: 2px;
   }
 
   .right-item {
@@ -65,6 +82,30 @@
     padding: 30px 0;
   }
 
+  .hero-right {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .hero-img {
+    width: 340px;
+    height: 350px;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 350px;
+  }
+
+  .hero-circle {
+    width: 280px;
+    height: 280px;
+  }
+
   .hero-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -76,13 +117,46 @@
   }
 
   /*=====================================================
-    =                     ABOUT                           =
+    =                     ABOUT                          =
     =====================================================*/
 
   .about-container {
     flex-direction: column;
+    padding: 20px;
     row-gap: 15px;
+    width: 100%;
+  }
 
+  /* Partie gauche : image */
+  .about-left {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-img {
+    width: 320px;
+    height: 320px;
+  }
+
+  .about-image {
+
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .about-square {
+    width: 320px;
+    height: 320px;
+  }
+
+  /* Partie droite : texte */
+  .about-right {
+    width: 100%;
+    text-align: center;
   }
 
   .about-title {
@@ -92,10 +166,7 @@
     text-align: center;
   }
 
-  .about-right {
-    text-align: center;
-  }
-
+  /* Bouton CV */
   .download-button {
     display: inline-flex;
     margin: 20px auto;
@@ -182,15 +253,33 @@
 
   .menu-btn {
     display: block;
-    background-color: #5d18f4;
-    height: 25px;
-    width: 25px;
-    border-radius: 2px;
-    color: azure;
+    width: 35px;
+    height: 45px;
+    padding: 0;
+
+    background-color: white;
+
+
     cursor: pointer;
+
+    /* centre les 3 lignes */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
     position: relative;
     z-index: 1001;
-    margin-right: 30px;
+  }
+
+  .menu-btn span {
+    display: block;
+    width: 25px;
+    height: 4px;
+
+    background-color: var(--color-primary);
+    border-radius: 2px;
   }
 
   .right-item {
