@@ -249,6 +249,10 @@ body.dark-mode .right-item.active a.red {
   color: rgb(142, 2, 142);
 }
 
+body.dark-mode .red {
+  color: rgb(142, 2, 142);
+}
+
 /* Buttons */
 
 body.dark-mode .btn-github {
