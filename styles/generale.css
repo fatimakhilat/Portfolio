@@ -174,3 +174,144 @@ button {
 .red {
   color: rgb(142, 2, 142);
 }
+
+/*=========================================================
+=                     DARK MODE                           =
+=========================================================*/
+
+body.dark-mode {
+  background: var(--bg-dark);
+}
+
+/* Containers */
+
+body.dark-mode .header-container,
+body.dark-mode .hero-container,
+body.dark-mode .about-container,
+body.dark-mode .skills-container,
+body.dark-mode .projects-container,
+body.dark-mode .footer-container {
+
+  background: var(--bg-dark);
+
+}
+
+/* Borders */
+
+body.dark-mode .header-container,
+body.dark-mode .hero-container,
+body.dark-mode .projects-container {
+
+  border-bottom: 1px solid var(--color-border-dark);
+
+}
+
+/* Cards */
+body.dark-mode .project-card {
+  background: var(--bg-dark);
+}
+
+
+/* Titles */
+body.dark-mode .hero-greeting,
+body.dark-mode .hero-job,
+body.dark-mode .btn-secondary,
+body.dark-mode .about-title,
+body.dark-mode .icon-title,
+body.dark-mode .skill-title,
+body.dark-mode .item-title,
+body.dark-mode .project-title,
+body.dark-mode .par1,
+body.dark-mode .link-contact,
+body.dark-mode .nav-title,
+body.dark-mode .copyright,
+body.dark-mode .logo,
+body.dark-mode a {
+  color: var(--color-white);
+}
+
+/* Paragraphs */
+
+body.dark-mode .about-job,
+body.dark-mode .icon-des,
+body.dark-mode .hero-text,
+body.dark-mode .par2 {
+  color: rgb(216, 213, 213);
+}
+
+/* Links */
+
+body.dark-mode .right-item.active a {
+  color: var(--color-white);
+}
+
+/* Buttons */
+
+body.dark-mode .btn-github {
+  color: var(--color-black);
+}
+
+/* Decorative elements */
+
+body.dark-mode .hero-circle {
+  background: var(--color-primary);
+}
+
+body.dark-mode .hero-dots {
+  background-image: radial-gradient(var(--color-primary) 2px, transparent 2px);
+}
+
+
+body.dark-mode .red {
+  color: rgb(142, 2, 142);
+}
+
+body.dark-mode .right-item.active {
+  background: var(--bg-dark);
+}
+
+
+body.dark-mode #skills {
+  border: 1px solid #374151;
+}
+
+body.dark-mode .nav-title:hover {
+  color: var(--color-primary);
+  padding-left: 6px;
+}
+
+body.dark-mode .link-title {
+  color: var(--color-primary);
+}
+
+
+body.dark-mode .link-title:hover {
+  color: var(--color-primary-hover);
+  transform: scale(1.05);
+}
+
+
+body.dark-mode .des-tag,
+body.dark-mode .describe-title {
+  color: #c6c9ce;
+}
+
+body.dark-mode .card-square {
+  background-color: rgb(17, 24, 39);
+}
+
+body.dark-mode .link-contact:hover {
+  color: var(--color-primary-hover);
+}
+
+/*=========================================================
+=                     ANIMATIONS                          =
+=========================================================*/
+
+section,
+footer {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity .8s ease,
+    transform .8s ease;
+}
